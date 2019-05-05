@@ -1,0 +1,35 @@
+<div class="card col-12 mb-2 py-1 px-1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 px-0">
+        <div class="image" [ngStyle]="{'background-image': image}"></div>
+      </div>
+      <div class="col-5 px-2 pt-1">
+        <h6 class="name font-weight-bold mb-1">{{name}}</h6>
+        <div class="stars-container mb-1">
+          <svg-icon
+            src="assets/icons/filters/star.svg"
+            [svgStyle]="{'width.px': 18, 'fill':'#FDBA12'}" 
+            [ngStyle]="{'width.px': 18}"
+            *ngFor="let amenity of iterations(stars)"></svg-icon>
+        </div>
+        <div class="amenities-container">
+          <svg-icon
+            src="assets/icons/amenities/{{amenity}}.svg"
+            [svgStyle]="{'width.px': 18, 'fill':'#FDBA12'}" 
+            [ngStyle]="{'width.px': 18}"
+            class="mr-2"
+            *ngFor="let amenity of amenities"></svg-icon>
+        </div>
+      </div>
+      <div class="col-3 border-dashed my-2" [ngStyle]="{display: 'inherit'}">
+        <div class="precio text-center">
+          <p class="px-5 msj mb-2">Precio por noche por habitación</p>
+          <p class="mb-2 orange">ARS <span class="font-weight-bold" [ngStyle]="{'font-size.%': 150}">{{price}}</span></p>
+          <button class="btn button">Ver Hotel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

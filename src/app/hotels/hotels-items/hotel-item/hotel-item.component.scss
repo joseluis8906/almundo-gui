@@ -1,0 +1,35 @@
+@import 'src/palette';
+
+.image {
+  width: 100% !important;
+  min-height: 176px !important;
+  max-height: 176px !important;
+}
+
+.name {
+  color: $secondary;
+}
+
+.border-dashed {
+  border-left: 1px lightgray dotted;
+}
+
+.precio {
+  height: 85% !important;
+  margin: auto;
+  overflow: hidden;
+}
+
+.precio .msj {
+  font-size: 70%;
+}
+
+.button {
+  background-color: $primary;
+  color: white;
+  font-weight: bold;
+}
+
+.orange {
+  color: $orange;
+}

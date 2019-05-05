@@ -1,0 +1,14 @@
+<div class="row py-2">
+  <div class="col-12 px-1">
+    <div class="custom-control custom-checkbox mr-sm-2">
+      <input type="checkbox" class="custom-control-input" [id]="ngId">
+      <label class="custom-control-label" [for]="ngId">{{label}}
+        <svg-icon
+          src="assets/icons/filters/star.svg"
+          [svgStyle]="{'width.px': 18, 'fill':'#FDBA12'}" 
+          [ngStyle]="{'width.px': 18}"
+          *ngFor="let star of iterations(stars)"></svg-icon>
+        </label>
+    </div>
+  </div>
+</div>

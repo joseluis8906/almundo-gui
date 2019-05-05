@@ -1,0 +1,11 @@
+@import 'src/palette';
+
+app-title-bar {
+  background-color: $primary;
+  height: 10%;
+}
+
+app-content {
+  background-color: $content;
+  height: 90%;
+}

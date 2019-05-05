@@ -1,0 +1,31 @@
+<div class="card col-12 nombre">
+  <div class="container-fluid">
+    <div class="row" (click)="isCollapsed = !isCollapsed">
+      <div class="col-md-1 px-0 text-center">
+        <svg-icon src="assets/icons/filters/search.svg"
+                  [svgStyle]="{'width.px': 18, 'fill':'#157AB1'}" 
+                  [ngStyle]="{'width.px': 18}"></svg-icon>
+      </div>
+      <div class="col-md-10 px-0">
+          <span class="font-weight-bold">Nombre de hotel</span>
+      </div>
+      <div class="col-md-1 px-0">
+        <svg-icon [src]="isCollapsed ? 'assets/icons/filters/drop-down-arrow.svg' : 'assets/icons/filters/drop-up-arrow.svg'"
+          [svgStyle]="{'width.px': 16, 'height.px': 16, 'fill':'#157AB1'}" 
+          [ngStyle]="{'width.px': 16}"></svg-icon>
+      </div>
+    </div>
+    <div class="row" [ngbCollapse]="isCollapsed">
+      <div class="container-fluid">
+        <div class="row py-2">
+          <div class="col-8 px-1">
+            <input type="text" class="form-control py-0" placeholder="Ingrese el nombre del hotel" [ngStyle]="{'font-size.%': 80}">
+          </div>
+          <div class="col-4 px-1">
+            <button class="btn button px-2 py-1" [ngStyle]="{'font-size.%': 90}">Aceptar</button> 
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
