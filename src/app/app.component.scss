@@ -3,9 +3,9 @@
 app-title-bar {
   background-color: $primary;
   height: 10%;
+  max-height: 64px;
 }
 
 app-content {
-  background-color: $content;
   height: 90%;
 }
