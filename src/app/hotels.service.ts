@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Hotel } from './hotels/Hotel';
 import { Observable, Subject } from 'rxjs';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class HotelsService {
   private page: number;
   private lastAction: string;
 
-  private endPoint: string = "https://almundoapi-portafolio.josecaceres.info/api/v1/hotels";
+  private endPoint: string = `${environment.API}/api/v1/hotels`;
 
   public nameSubject: Subject<string>;
   public name$: Observable<string>;
