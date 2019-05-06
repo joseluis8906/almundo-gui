@@ -13,7 +13,7 @@ export class HotelsService {
   private page: number;
   private lastAction: string;
 
-  private endPoint: string = "http://almundoapi-portafolio.josecaceres.info/api/v1/hotels";
+  private endPoint: string = "https://almundoapi-portafolio.josecaceres.info/api/v1/hotels";
 
   public nameSubject: Subject<string>;
   public name$: Observable<string>;
