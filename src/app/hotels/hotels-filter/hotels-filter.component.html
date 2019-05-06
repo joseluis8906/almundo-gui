@@ -1,9 +1,9 @@
-<div class="card col-12">
+<div class="card col-12" (click)="show = !show">
   <p class="pt-1 mb-1 font-weight-bold">
     Filtros
   </p>
 </div>
 
-<app-hotels-filter-nombre></app-hotels-filter-nombre>
+<app-hotels-filter-nombre class="d-md-block" [ngClass]="{'d-none': show}"></app-hotels-filter-nombre>
 
-<app-hotels-filter-stars></app-hotels-filter-stars>
+<app-hotels-filter-stars class="d-md-block" [ngClass]="{'d-none': show}"></app-hotels-filter-stars>

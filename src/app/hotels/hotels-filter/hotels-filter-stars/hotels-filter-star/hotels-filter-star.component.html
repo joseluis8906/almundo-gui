@@ -1,7 +1,7 @@
 <div class="row py-2">
   <div class="col-12 px-1">
-    <div class="custom-control custom-checkbox mr-sm-2">
-      <input type="checkbox" class="custom-control-input" [id]="ngId">
+    <div class="custom-control custom-checkbox mr-sm-2" (click)="onClick($event.target)">
+      <input type="checkbox" class="custom-control-input" [id]="ngId" [(ngModel)]="value">
       <label class="custom-control-label" [for]="ngId">{{label}}
         <svg-icon
           src="assets/icons/filters/star.svg"
