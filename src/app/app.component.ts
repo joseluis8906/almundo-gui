@@ -6,7 +6,8 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'almundo-gui';
+  title = 'Demo almundo.com';
+  terminos = false;
   screenSize: any = {width: null, heigth: null};
 
   @HostListener("window:resize", ["$event"])

@@ -1,5 +1,22 @@
 @import 'src/palette';
 
+.custom {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.custom strong {
+  color: $error;
+}
+
+.button {
+  background-color: $orange;
+  color: white;
+  font-weight: bold;
+  height: 32px !important;
+}
+
 app-title-bar {
   background-color: $primary;
   height: 10%;
