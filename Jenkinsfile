@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image "node:10.15.3-stretch"
+      image "node:10.15.3-alpine"
       args "--name almundo-gui --network nginx"
     }
   }
