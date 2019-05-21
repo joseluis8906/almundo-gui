@@ -19,7 +19,7 @@ Abrir la dirección http://localhost:4200/
 
 ## Producción
 
-En entorno productivo, no es necesario tener una instancia de la api almundo en ejecución pues se realiza la conexión automaticamente a la url https://almundoapi-portafolio.josecaceres.info.<br />
+En entorno productivo, no es necesario tener una instancia de la api almundo en ejecución pues se realiza la conexión automaticamente a la url https://portafolio.josecaceres.info/almundo.<br />
 <br />
 Para desplegar el proyecto en un entorno productivo, seguir las siguientes instrucciones:<br />
 <br />
