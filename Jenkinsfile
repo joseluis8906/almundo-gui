@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image "node:10.15.3-stretch"
-      args "--name almundo-gui --network nginx -v /var/www/portafolio.josecaceres.info/almundo/dist:/var/jenkins_home/workspace/almundo-gui/dist/browser"
+      args "--name almundo-gui --network nginx -v /var/www/portafolio.josecaceres.info/almundo/dist:/var/jenkins_home/workspace/almundo-gui/dist"
     }
   }
   stages {
