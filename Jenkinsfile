@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image "node:10.15.3-stretch"
-      args "--name almundo-gui --network nginx"
+      args "--name almundo-gui --network nginx -v /var/www/portafolio.josecaceres.info/almundo/dist:var/jenkins_home/workspace/almundo-gui/dist"
     }
   }
   stages {
@@ -14,8 +14,7 @@ pipeline {
     }
     stage ("Run") {
       steps {
-        sh "npm run build:ssr"
-        sh "npm run serve:ssr&"
+        sh "npm run build"
       }
     }
     stage ("Next Build") {
