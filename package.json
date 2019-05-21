@@ -12,7 +12,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "PORT=4200 node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run almundo-gui:server:production"
+    "build:client-and-server-bundles": "ng build --prod --base-href /almundo/ && ng run almundo-gui:server:production"
   },
   "private": true,
   "dependencies": {
