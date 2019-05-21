@@ -4,15 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href /almundo",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "ng serve --host 0.0.0.0 --disable-host-check --base-href /almundo",
+    "dev": "ng serve --host 0.0.0.0 --disable-host-check",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "PORT=4200 node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod --base-href /almundo && ng run almundo-gui:server:production"
+    "build:client-and-server-bundles": "ng build && ng run almundo-gui:server:production"
   },
   "private": true,
   "dependencies": {
